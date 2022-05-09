@@ -1,0 +1,33 @@
+MVC or Model View Controller
+
+MVC Stands for Model View Controller and it's software architecture design pattern. The goal of mvc is to separate functions and methods, logic, and user interface of the application to organize the program. 
+It makes it easier for multiple developers to work on the same project.  Below are some example frameworks that use MVC.
+
+- Swift
+- Ruby on Rails 
+- Express
+- Angular
+- Laravel 
+
+Most of the frameworks mentioned above have folders in their file structure, called model, view, and controller. 
+
+Model
+
+The Model is responsible for getting and manipulating the data, in which we can make the comparison to the brain of the application. For dynamic applications, it interacts with a database. This could be a relational 
+database or a NoSQL database. It do not matter and in many frameworks that support multiple databases, the model code will stay the exact same.It's just the database that have to change and it doesn't even have to be a 
+database that works with it. It could be a simple file. So in theory, one could just have a model interact with a JSON file and pull data from that.  The model will usually takes care of queries like select, insert, 
+update, and delete, and the model also communicates with the controller. In most cases, the controller can request data through the model and the controller updates the view. With some frameworks, the model can 
+actually update the view directly. This is another example of what makes MVC complicated. In summary there's different implementations and they can act differently from framework to framework.
+
+View
+
+The view of the application, user interface, is what the user sees and how they interact with the application. So the view usually consists of HTML and CSS or UI SDK along with dynamic values from the controller. So the 
+controller communicates with the view as well as the model. The template engine view is what allows dynamic data. If we have straight HTML, we can't output variables, we can't use logic, select an if statement, etc., 
+but, with template engines or UI SDK, we can do that stuff right in the view or right in the template.
+
+Controller
+
+So, finally, we have the controller and the controller takes in user input, so this could be from the user visiting a page or clicking a link which makes a get request or submitting a form which makes a post request 
+and we also have delete requests or put requests for updating. The request can't be made directly from the application, you can only do a get or a post but we do have HTTP clients that are at times built in with the 
+framework, that can do that.  Now the controller acts as kind of a middleman between the model and the view. The controller will ask the model to get some data from a database and then the controller will take that 
+data and load a view and pass that data into it. Then, from there, the template engine takes over and can basically do some logic, output variables, and things like that.
